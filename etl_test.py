@@ -70,7 +70,7 @@ def main():
     cur=conn.cursor()
     coins_list_df, coins_market_price_df = get_cryptocoins_data()
     load_coins_list(conn, coins_list_df)
-    #report_coins_list(cur, conn)
+    report_coins_list(cur, conn)
     load_coins_market_price(conn, coins_market_price_df)
     report_coins_market_price(cur, conn)
     
